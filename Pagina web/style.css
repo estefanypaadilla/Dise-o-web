@@ -1,0 +1,325 @@
+
+
+/* Estilos para el header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Asegura que el encabezado esté encima del video */
+}
+
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centrado-header {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    padding-top: 56.25%; /* Para mantener las proporciones 16:9 */
+    position: relative;
+}
+
+/* Estilos para el título */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 130px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+/* Estilos para el video de fondo */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Elimina los estilos de background de header y centrado-header */
+header {
+    background-color: transparent;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.centrado-header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.centrado-header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Eliminar subrayado y cambiar estilo de los enlaces */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none; /* Quita los puntos de lista */
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    background-color: #d9a6a6;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    padding: 12px 20px;
+    font-weight: bold;
+    min-width: 160px;
+    margin-right: 70px;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 1.2; /* Ajusta la altura de línea para centrar verticalmente */
+    vertical-align: middle; /* Asegura la alineación vertical */
+}
+
+nav ul li a:hover {
+    background-color: #ff00e6;
+    color: rgb(250, 221, 221);
+}
+
+nav ul li a.active {
+    background-color: #f199e1;
+    color: white;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+.columnas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.columna {
+    flex: 1;
+    min-width: 210px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.columna-derecha {
+    flex-basis: calc(50% - 40px); /* Ancho base de 50% menos el doble del padding */
+}
+
+.columna-dentro {
+    flex-basis: 80%; /* Aumenta el ancho base de la columna del medio */
+}
+
+.columna-izquierda {
+    background-color: #d8a1d1;
+}
+
+.columna-derecha {
+    background-color: #da9ad1;
+}
+
+.contenedor-imagen {
+    position: relative;
+    width: 1502px; /* Ajusta el ancho según necesites */
+    height: 500px; /* Ajusta el alto según necesites */
+  }
+  
+  .texto-sobre-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente */
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen ocupe todo el espacio */
+  }
+  
+
+/* Estilos para el footer */
+footer {
+    background-color: #f5f5f5;
+    color: #000000;
+    text-align: center;
+    padding: 1rem;
+    clear: both; /* Esto asegura que el footer se muestre debajo de las columnas */
+    background-image: url('LARGE-Crumbl-cookies-28-e1723749738300.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Estilos para las columnas */
+.columna {
+    flex: 1;
+    min-width: 210px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f4d1ee;
+}
+
+.columna-izquierda {
+    background-color: #f8c6f0;
+}
+
+.columna-derecha {
+    background-color: #f8b9ef;
+}
+
+/* Eliminar subrayado y cambiar estilo de los enlaces */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff00e6;
+    color: rgb(250, 221, 221);
+}
+
+nav ul li a.active {
+    background-color: #f199e1;
+    color: rgb(70, 27, 27);
+}
+
+/* Estilos adicionales si lo deseas */
+.list-style-type-none {
+    list-style-type: none;
+}
+
+.list-style-type-none li {
+    margin-bottom: 10px;
+}
+
+.list-style-type-none .direccion-tienda {
+    font-style: italic;
+}
+
+.list-style-type-none .titulo-principal {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.list-style-type-none .texto-grande {
+    font-size: 18px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.formulario-contacto {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffe6e6;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.espacio-superior {
+    height: 200px; /* Ajusta esta altura según tus necesidades */
+    background-color: #ffa5a5;
+}
+
+h2 {
+    text-align: center;
+    color: #a95151;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #810000;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #efb0b0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #74000e;
+    color: rgb(255, 147, 147);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff6b6b;
+}
